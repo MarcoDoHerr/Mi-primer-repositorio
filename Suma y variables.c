@@ -35,9 +35,16 @@ int main()
 	
 	printf("Raiz Cuadrada\n");
 	c= sqrt(a);
-	printf("\tLa Raiz Cuadrada de %f es: %f\n", a, c);
+	printf("\n\tLa Raiz Cuadrada de %0.2f es: %0.2f\n", a, c);
 	c= sqrt(b);
-	printf("\tLa Raiz Cuadrada de %f es: %f\n", b, c);
+	printf("\n\tLa Raiz Cuadrada de %0.2f es: %0.2f\n", b, c);
+	
+	printf("Potencia\n");
+	c= pow(a,b); //Operacion matematica
+	printf("\t%0.2f Elevado a la potencia %0.2f = %0.2f\n", a , b , c);
+	c= pow(b,a); //Operacion matematica
+	printf("\t%0.2f Elevado a la potencia %0.2f = %0.2f\n", b , a , c);
+	
 	return 0;
 }
 
