@@ -3,9 +3,12 @@
  #define PI 3.1416
  
  int main(){
- 	float area, radio; //Declaración de variables
- 	radio= 5;
- 	area= PI * pow(5,2);
- 	printf("Area\n");
- 	printf("%s%0.2f\n\n", "Area de Circulo con radio 5:", area);
+ 	int r;
+	float per, a;
+	printf("Introduce radio (entero): ");
+	scanf("%d", &r);
+	per=(PI*2)*r;
+	a= PI * (pow(r,2));
+ 	printf("\nLa longitud de la circunferencia es: %0.2f\n", per);
+ 	printf("\nEl area del circulo es %0.2f\n", a );
  }
